@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cupcakes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/quartz/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="list-group" style="max-width: 40rem;margin: auto; padding: 25px; text-align: center;">
+        <h2 class="mb-1">See all the cupcakes!</h2>
+    </div>
+    <ul id="cupcakes-list" class="list-group">
+    </ul>
+
+    <div class="card text-white bg-success mb-3" style="max-width: 40rem; margin: auto; padding: 25px; ">
+        <div class="card-header" style="margin: auto;">ADD A NEW CUPCAKE</div>
+        <div class="card-body">
+            <form id="new-cupcake-form" class="form-group row">
+                <div>
+                    <label for="form-flavor" class="col-sm-2 col-form-label">Flavor: </label>
+                    <input name="flavor" id="form-flavor" class="form-control">
+                </div>
+
+                <div>
+                    <label for="form-size" class="col-sm-2 col-form-label">Size: </label>
+                    <input name="size" id="form-size" class="form-control">
+                </div>
+
+                <div>
+                    <label for="form-rating" class="col-sm-2 col-form-label">Rating: </label>
+                    <input type="number" name="rating" id="form-rating" class="form-control">
+                </div>
+
+                <div>
+                    <label for="form-image" class="col-sm-2 col-form-label">Image: </label>
+                    <input name="image" id="form-image" class="form-control">
+                </div>
+                <br>
+                <button type="button" class="btn btn-primary" style="margin: 10px;">Primary</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/cupcakes.js"></script>
+
+</body>
+
+</html>
